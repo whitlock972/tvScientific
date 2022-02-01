@@ -1,0 +1,222 @@
+ measure: installs_html {
+    #hidden: yes
+    view_label: "HTML Fields"
+    type: number
+    sql: 0;;
+    html: <head>
+          <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap' >
+          </head>
+
+
+           <div style =@{multiple_value_contain}>
+          <table style="align:left; ">
+
+          <!-- Installs Section -->
+          <tr><td style= @{table_headers}> Installs </td></tr>
+          <tr><td style= @{imgs}>{% if current_period_total_installs._value > prior_period_total_installs._value %}
+            <img src="@{green_arrow_up}"/>
+          {% else %}
+            <img src="@{red_line_down}"/>
+          {% endif %}</td></tr>
+            <tr><td><p style=@{large_value}>{{current_period_total_installs._rendered_value}}<br>
+            {% if current_period_total_installs._value > prior_period_total_installs._value %}
+            <td style=@{positive_value}> +{{current_vs_prior_installs._rendered_value}}</td>
+            {% else %}
+            <td style=@{negative_value}> -{{currentvs_prior_installs._rendered_value}}</td>
+            {% endif %}
+            <td style=@{descriptive_text}>| Incremental {{current_period_total_installs._rendered_value}} &nbsp;&nbsp;</td>
+            {% if current_period_total_installs._value > prior_period_total_installs._value %}
+            <td style=@{positive_value}> +{{current_vs_prior_installs._rendered_value}}</td>
+            {% else %}
+            <td style=@{negative_value}> -{{current_vs_prior_installs._rendered_value}}</td>
+            {% endif %}
+            </td>
+            </tr>
+            <hr style=" width: 322px; height: 3px; margin: 45px 0 19px;">
+
+            <!-- Revenue -->
+          <tr><td style= @{table_headers}> Revenue Day-45 </td></tr>
+          <tr><td style= @{imgs}>{% if current_period_total_revenue._value > prior_period_total_revenue._value%}
+            <img src="@{green_arrow_up}"/>
+          {% else %}
+            <img src="@{red_line_down}"/>
+          {% endif %}</td></tr>
+            <tr><td><p style=@{large_value}>{{current_period_total_revenue._rendered_value}}<br>
+            {% if current_period_total_installs._value > prior_period_total_installs._value %}
+            <td style=@{positive_value}> +{{current_vs_prior_installs._rendered_value}}</td>
+            {% else %}
+            <td style=@{negative_value}> -{{current_vs_prior_installs._rendered_value}}</td>
+            {% endif %}
+            <td style=@{descriptive_text}>| Incremental {{current_period_total_installs._rendered_value}} &nbsp;&nbsp;</td>
+            {% if current_period_total_installs._value > prior_period_total_installs._value %}
+            <td style=@{positive_value}> +{{current_vs_prior_installs._rendered_value}}</td>
+            {% else %}
+            <td style=@{negative_value}}> -{{current_vs_prior_installs._rendered_value}}</td>
+            {% endif %}
+            </td>
+            </tr>
+            <hr style=" width: 322px; height: 3px; margin: 45px 0 19px;">
+
+             <!-- Total Spend -->
+          <tr><td style= @{table_headers}> Total Spend </td></tr>
+          <tr><td style= @{imgs}>{% if current_period_total_spend._value > prior_period_total_spend._value %}
+            <img src="@{green_arrow_up}"/>
+          {% else %}
+            <img src="@{red_line_down}"/>
+          {% endif %}</td></tr>
+            <tr><td><p style=@{large_value}>{{current_period_total_spend._rendered_value}}<br>
+            {% if current_period_total_installs._value > prior_period_total_installs._value %}
+            <td style=@{positive_value}> +{{current_vs_prior_installs._rendered_value}}</td>
+            {% else %}
+            <td style=@{negative_value}> -{{current_vs_prior_installs._rendered_value}}</td>
+            {% endif %}
+            <td style=@{descriptive_text}>| Incremental {{current_period_total_installs._rendered_value}} &nbsp;&nbsp;</td>
+            {% if current_period_total_installs._value > prior_period_total_installs._value %}
+            <td style=@{positive_value}> +{{current_vs_prior_installs._rendered_value}}</td>
+            {% else %}
+            <td style=@{negative_value}> -{{current_vs_prior_installs._rendered_value}}</td>
+            {% endif %}
+            </td>
+            </tr>
+            <hr style=" width: 322px; height: 3px; margin: 45px 0 19px;">
+
+            </table>
+            </div>
+
+
+                  ;;
+    }
+
+  measure: CPI_html {
+  #hidden: yes
+  view_label: "CPI HTML"
+  type: number
+  sql: 0;;
+  html:
+  <div style =@{multiple_value_contain2}>
+  <p style =@{table_headers}> Cost Per Install (CPI) </p>
+  <p style =@{small_text}> CTV only </p>
+  <table style="margin: 20px 15px 7px 90px; padding-right: 40px;">
+  <td style= @{large_value2}>{{current_period_total_revenue._rendered_value}} </td>
+  <td style= @{imgs2}>{% if current_period_total_installs._value > prior_period_total_installs._value %}
+            <img src="@{green_arrow_up}"/>
+          {% else %}
+            <img src="@{red_line_down}"/>
+          {% endif %}</td>
+  </table>
+  </p>
+            {% if current_period_total_installs._value > prior_period_total_installs._value %}
+            <p style=@{positive_value2}> +{{current_vs_prior_installs._rendered_value}}
+            {% else %}
+            <span style=@{negative_value2}> -{{current_vs_prior_installs._rendered_value}}</span>
+            {% endif %}
+            <span style=@{descriptive_text}>| Incremental {{current_period_total_installs._rendered_value}} &nbsp;&nbsp;</span>
+            {% if current_period_total_installs._value > prior_period_total_installs._value %}
+            <span style=@{positive_value}> +{{current_vs_prior_installs._rendered_value}}</span>
+            {% else %}
+            <span style=@{negative_value}> -{{current_vs_prior_installs._rendered_value}}</span>
+            {% endif %}
+          </p>
+
+  </div>;;
+  }
+
+  measure: ROAS_html {
+  #hidden: yes
+  view_label: "ROAS HTML"
+  type: number
+  sql: 0;;
+  html:
+  <div style =@{multiple_value_contain2}>
+  <p style =@{table_headers}> ROAS </p>
+  <p style =@{small_text}> CTV only </p>
+  <table style="margin: 20px 0 7px 90px;">
+  <td style= @{large_value2}>{{current_period_total_revenue._rendered_value}} </td>
+  <td style= @{imgs2}>{% if current_period_total_installs._value > prior_period_total_installs._value %}
+            <img src="@{green_arrow_up}"/>
+          {% else %}
+            <img src="@{red_line_down}"/>
+          {% endif %}</td>
+  </table>
+            {% if current_period_total_installs._value > prior_period_total_installs._value %}
+            <p style=@{positive_value2}> +{{current_vs_prior_installs._rendered_value}}
+            {% else %}
+            <span style=@{negative_value2}> -{{current_vs_prior_installs._rendered_value}}</span>
+            {% endif %}
+            <span style=@{descriptive_text}>| Incremental {{current_period_total_installs._rendered_value}} &nbsp;&nbsp;</span>
+            {% if current_period_total_installs._value > prior_period_total_installs._value %}
+            <span style=@{positive_value}> +{{current_vs_prior_installs._rendered_value}}</span>
+            {% else %}
+            <span style=@{negative_value}> -{{current_vs_prior_installs._rendered_value}}</span>
+            {% endif %}
+          </p>
+
+  </div>;;
+
+  }
+
+  measure: user_engagement_html {
+    #hidden: yes
+    view_label: "User Engagement HTML"
+    type: number
+    sql: 0;;
+    html:
+      <div style =@{multiple_value_contain2}>
+      <p style =@{table_headers}> User Engagement </p>
+      <p style =@{small_text}> CTV only </p>
+      <table style="margin: 20px 0 7px 90px;">
+      <td style= @{large_value2}>{{current_period_total_revenue._rendered_value}} </td>
+      <td style= @{imgs2}>{% if current_period_total_installs._value > prior_period_total_installs._value %}
+                <img src="@{green_arrow_up}"/>
+              {% else %}
+                <img src="@{red_line_down}"/>
+              {% endif %}</td>
+              </table>
+      </p>
+                {% if current_period_total_installs._value > prior_period_total_installs._value %}
+                <p style=@{positive_value2}> +{{current_vs_prior_installs._rendered_value}}
+                {% else %}
+                <span style=@{negative_value2}> -{{current_vs_prior_installs._rendered_value}}</span>
+                {% endif %}
+                <span style=@{descriptive_text}>| Incremental {{current_period_total_installs._rendered_value}} &nbsp;&nbsp;</span>
+                {% if current_period_total_installs._value > prior_period_total_installs._value %}
+                <span style=@{positive_value}> +{{current_vs_prior_installs._rendered_value}}</span>
+                {% else %}
+                <span style=@{negative_value}> -{{current_vs_prior_installs._rendered_value}}</span>
+                {% endif %}
+              </p>
+
+      </div>;;
+
+    }
+
+
+  measure: quadrant_html {
+    #hidden: yes
+    view_label: "Quadrant HTML"
+    type: number
+    sql: 0;;
+    html:
+      <div style =@{multiple_value_contain2}>
+      <p style =@{quad_table_headers}> By Creators for Creators </p>
+      <table style="padding: 20px">
+      <tr>
+      <td style= @{quad_headers}> $257.44 </td>
+      <td style= @{quad_headers}> 225.4 K </td>
+      <tr><td style=@{quad_text}>Spend</td>
+          <td style=@{quad_text}>Impression</td></tr>
+      </tr>
+      <hr style=" width: 100%; height: 3px; align:left">
+      <tr>
+      <td style= @{quad_headers}> $2.56 </td>
+      <td style= @{quad_headers}> $37.89 </td>
+      <tr><td style=@{quad_text}}>CPV</td>
+          <td style=@{quad_text}>CPA</td></tr>
+      </tr>
+
+              </table>
+
+
+      </div>;;
+
+    }
