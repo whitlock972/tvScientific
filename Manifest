@@ -1,0 +1,278 @@
+constant: single_value_dashboard_css {
+  value: "font-family: 'Noto Sans JP', sans-serif;
+           font-size: 1rem;
+          font-weight: bold;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 5rem;
+          letter-spacing: 0.52px;
+          color: #181c20;
+          text-align: left;
+          padding: 5px;
+          margin-left:1px;
+          margin-top:1px;
+          margin-bottom:1px;"
+}
+
+constant: small_label_above_single_value_css {
+  value:  "font-family: 'Noto Sans JP', sans-serif;
+           font-size: .3rem;
+          font-weight: bold;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.25;
+          letter-spacing: normal;
+          color: #181c20;
+          text-align: left;
+          padding: 5px;
+          margin-left:20px;
+          margin-top:1px;
+          margin-bottom:1px;"
+}
+
+constant: table_headers {
+  value:"
+
+  text-align:left;
+  margin: 0 10px 40px 0;
+  font-size: 1.563rem;
+  line-height: 2.68;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: #181c20;
+  font-family:'Trebuchet MS',san_serif;"
+}
+
+constant: quad_table_headers {
+  value:"
+
+  text-align:left;
+  margin: 0 10px 15px 0;
+  font-size: 1.563rem;
+  line-height: 2.68;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: #181c20;
+  font-family:'Trebuchet MS',san_serif;"
+}
+
+
+constant: quad_headers {
+  value:"
+
+  text-align:left;
+  width:180px;
+  font-size: 1.563vw;
+  line-height: 1.68;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: #181c20;
+  font-family:'Trebuchet MS',san_serif;"
+}
+
+##<!--margin: 0 35px 1px 0;-->
+constant: large_value {
+  value: "width: 265px;
+  line-height:1px;
+  text-align:left;
+  margin: 0 10px 7px 0;
+  font-size: 3vw;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.52px;
+  color: #181c20;
+  font-family: 'Trebuchet MS',san_serif;"
+}
+
+constant: large_value2 {
+  value: "
+  line-height:1px;
+  text-align:left;
+  margin: 20px 80px 7px 90px;
+  font-size: 5vw;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 10px;
+  letter-spacing: 0.52px;
+  color: #181c20;
+  font-family: 'Trebuchet MS',san_serif;"
+}
+
+constant: descriptive_text {
+ value:"
+
+  font-size: 1.125vw;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: #727383;
+  line-height:10px;
+  font-family: 'Trebuchet MS',san_serif;"
+}
+
+constant: quad_text {
+  value:"
+
+  font-size: 1.125vw;
+  margin: 0 0 20px 0;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: #727383;
+  line-height:10px;
+  font-family: 'Trebuchet MS',san_serif;"
+}
+
+constant: small_text {
+  value:"
+
+  font-size: .875 rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  text-align:left;
+  margin: 40px 0 15px 90px;
+  letter-spacing: normal;
+  line-height:10px;
+  font-family: 'Trebuchet MS',san_serif;"
+}
+
+constant:imgs{
+value:"
+  text-align:left;
+  object-fit: contain;
+  width: 74px;
+  height: 74px;
+  margin: 40px 0 0 0;"
+}
+
+constant:imgs2{
+  value:"
+  left-padding: 40px;
+  text-align:center;
+  verticle-align:top;
+
+  width: 104px;
+  height: 74px;
+  margin: 0px 0px 90px 20px;"
+}
+
+constant: positive_value {
+  value: "
+  color: #0fbf84;
+  font-size: 1.125vw;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height:1px;
+  letter-spacing: normal;
+  font-family: 'Trebuchet MS',san_serif;"
+
+}
+
+constant: positive_value2 {
+  value: "
+  color: #0fbf84;
+  font-size: 1.125vw;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height:1px;
+  letter-spacing: normal;
+  margin: 15px 3px 70px 90px;
+  font-family: 'Trebuchet MS',san_serif;"
+
+}
+
+
+
+constant: negative_value2 {
+  value: "
+  color: #ff0000;
+  font-size: 1.125vw;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height:1px;
+  letter-spacing: normal;
+  margin: 15px 3px 70px 90px;
+  font-family: 'Trebuchet MS',san_serif;"
+
+}
+
+constant: negative_value {
+  value: "
+  color: #ff0000;
+  font-size: 1.125vw;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height:1px;
+  letter-spacing: normal;
+  font-family: 'Trebuchet MS',san_serif;"
+
+}
+
+
+
+
+
+constant: download_text {
+  value: "width: 100px;
+  height: 20px;
+  margin: 0 0 0 10px;
+  font-family:'Trebuchet MS',san_serif;
+  font-size: 0.875rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--azure);"
+}
+
+
+
+constant: multiple_value_contain {
+  value: " width: 100%;
+  text-align:center;
+  height: 100%;
+  margin: 0 18px 0 0;
+  padding: 10px 30px 10px 30px;
+  border-radius: 20px;
+  background-color: #fff;
+  font-family:'Trebuchet MS',san_serif;"
+}
+
+constant: multiple_value_contain2 {
+  value: " width: 100%;
+  text-align:left;
+  height: 100%;
+  margin: 0 18px 30px 0;
+  padding: 10px 30px 10px 30px;
+  border-radius: 20px;
+  background-color: #fff;
+  font-family:'Trebuchet MS',san_serif;"
+}
+
+constant: green_up_arrow {
+  value:"https://raw.githubusercontent.com/tvScientific/looker-dashboard/f65eb0fbe4fecd71acecfb190fafcd013c77335f/green_arrow_up.PNG?token=AU7LWYKU7CMWDIKRVNX4ICLB5WO6Y"
+}
+
+constant: green_arrow_up {
+  value: "https://user-images.githubusercontent.com/87997281/149586526-fbc6a04d-44ea-4a81-9883-fb5f38d218c1.png"
+}
+
+constant: red_line_down {
+  value: "https://user-images.githubusercontent.com/87997281/149586391-519ca633-9422-4065-bf83-0523883ef7e7.png"
